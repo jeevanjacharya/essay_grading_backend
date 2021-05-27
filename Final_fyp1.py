@@ -114,12 +114,12 @@ from difflib import SequenceMatcher
 #Importing classifier from sentiment analysis python file.
 from sentiment import classifier
 from flask_cors import CORS
-app = Flask(__name__)
-CORS(app)
+application = Flask(__name__)
+CORS(application)
 #Creating a flask API.
 #app = Flask(__name__)
 #creating an API URL and using POST request.
-@app.route('/essay_grading', methods = ['POST'])
+@application.route('/essay_grading', methods = ['POST'])
 #@cross_origin()
 
 #The main function
