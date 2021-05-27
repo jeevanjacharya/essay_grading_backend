@@ -115,6 +115,7 @@ from difflib import SequenceMatcher
 from sentiment import classifier
 from flask_cors import CORS
 application = Flask(__name__)
+app = application
 CORS(application)
 #Creating a flask API.
 #app = Flask(__name__)
